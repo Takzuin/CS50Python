@@ -19,7 +19,7 @@ def get_student():
 
 if __name__ == "__main__":
     main()
-""""
+"""
 
 #Devuelve Ron from NY
 
@@ -32,10 +32,13 @@ class Student:
         self.name = name
         self.house = house
 
+    def __str__(self):
+        return f"{self.name} from {self.house}"
+
 
 def main():
     student = get_student()
-    print(f"{student.name} from {student.house}")
+    print(student)
 
 
 def get_student():
